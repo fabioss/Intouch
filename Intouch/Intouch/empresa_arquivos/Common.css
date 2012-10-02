@@ -1,0 +1,95 @@
+BODY {
+	MARGIN: 0px; FONT: 75% Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: rgb(255,255,255)
+}
+A:link {
+	FONT-WEIGHT: normal; COLOR: #3366cc; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-WEIGHT: normal; COLOR: #3366cc; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-WEIGHT: normal; COLOR: #3366cc; TEXT-DECORATION: underline
+}
+DT {
+	FONT-SIZE: 100%; FONT-FAMILY: Verdana
+}
+P {
+	FONT-SIZE: 100%; FONT-FAMILY: Verdana
+}
+A {
+	FONT-SIZE: 100%; FONT-FAMILY: Verdana
+}
+BLOCKQUOTE {
+	FONT-SIZE: 100%; FONT-FAMILY: Verdana
+}
+TD {
+	FONT-SIZE: 75%; FONT-FAMILY: Verdana
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 115%; COLOR: #000000; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 115%; COLOR: #000000; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 115%; COLOR: #000000; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 115%; COLOR: #000000; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 115%; COLOR: #000000; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+H6 {
+	FONT-WEIGHT: bold; FONT-SIZE: 115%; COLOR: #000000; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+DIV.divMiolo {
+	LEFT: 1%; WIDTH: 98%; POSITION: relative
+}
+.pr {
+	FONT-WEIGHT: normal; FONT-SIZE: 80%; LIST-STYLE-IMAGE: none; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #f8c400
+}
+.OE {
+	BORDER-RIGHT: #000080 2px solid; BORDER-TOP: #000080 2px solid; FONT-WEIGHT: normal; FONT-SIZE: 80%; LEFT: 2px; LIST-STYLE-IMAGE: none; BORDER-LEFT: #000080 2px solid; BORDER-BOTTOM: #000080 2px solid; FONT-STYLE: normal; FONT-FAMILY: Verdana; POSITION: relative; BACKGROUND-COLOR: #e7ecf6
+}
+UL.bullet13 {
+	LIST-STYLE-POSITION: outside; LIST-STYLE-IMAGE: url(/images/bullet13.jpg)
+}
+TD.bullet13 {
+	BACKGROUND: url(/images/bullet13.jpg) no-repeat center 50%
+}
+.TituloPaginas {
+	PADDING-RIGHT: 5px; MARGIN-TOP: 0px; DISPLAY: block; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 130%; MARGIN-BOTTOM: 30px; PADDING-BOTTOM: 5px; WORD-SPACING: 0px; WIDTH: 99%; COLOR: #000000; LINE-HEIGHT: 100%; PADDING-TOP: 5px; BORDER-BOTTOM: #a3b3ca 1px solid; FONT-STYLE: normal; FONT-FAMILY: Verdana; POSITION: relative; BACKGROUND-COLOR: #ede9da; TEXT-ALIGN: left; TEXT-DECORATION: none; WORD-WRAP: break-word
+}
+.Contexto {
+	MARGIN-TOP: 0px; FONT-WEIGHT: bold; FONT-SIZE: 115%; LEFT: 1%; MARGIN-BOTTOM: 0px; WORD-SPACING: 0px; COLOR: #6580b1; LINE-HEIGHT: 100%; FONT-FAMILY: Verdana; POSITION: relative; TEXT-DECORATION: none
+}
+.espacoRodape {
+	DISPLAY: block; WIDTH: 100%; HEIGHT: 90px
+}
+.Rodape {
+	PADDING-RIGHT: 0px; BORDER-TOP: #a7b9da 1px solid; DISPLAY: block; PADDING-LEFT: 0px; Z-INDEX: 100; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: text-bottom; PADDING-TOP: 0px; BACKGROUND-COLOR: #f0f1f4; align: center
+}
+SPAN.corpoRodape {
+	DISPLAY: block; FONT-SIZE: 85%; COLOR: #264989; FONT-STYLE: normal; FONT-FAMILY: Verdana; TEXT-ALIGN: center
+}
+#SRFWWW_AreaMenu_Cabecalho {
+	HEIGHT: 125px
+}
+
+@media Print    
+{
+#SRFWWW_AreaMenu_Cabecalho {
+	DISPLAY: none
+}
+.corpoRodape {
+	DISPLAY: none
+}
+.Rodape {
+	DISPLAY: none
+}
+.Classe_Ocultar_Impressao {
+	DISPLAY: none
+}
+
+}

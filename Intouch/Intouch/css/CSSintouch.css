@@ -1,0 +1,58 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+@import url(layout.css);
+/************************************************************************
+*   
+*   G L O B A L  C S S
+*   
+*   Author:  Ricardo Marques
+*   Date:    01 Fevereiro 2010
+*   Email:   ricardo.marqsantos@gmail.com
+* 
+*************************************************************************/
+
+/*-----------------------------------------------------------------------
+Reset
+------------------------------------------------------------------------*/
+html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul,
+ol, li, dl, dt, dd, form, a, fieldset, input, th, textarea, button
+{margin: 0; padding: 0; border: 0; outline: none;}
+
+
+/*-----------------------------------------------------------------------
+Global
+------------------------------------------------------------------------*/
+
+.fundo{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	background-image:url(../img/bg.jpg);
+	background-repeat:repeat-x;
+}
+
+.backLog{
+	width:100%;
+	margin:0;
+	min-height:508px;
+	background-image:url(../img/bg-body-login.jpg);
+	background-position:top center;
+	background-repeat:no-repeat;
+	overflow:visible;
+}
+
+#maincontainer{
+	width:100%;
+	margin:0;
+	min-height:320px;
+	background-image:url(../img/bg-body.jpg);
+	background-position:top center;
+	background-repeat:no-repeat;
+	overflow:visible;
+}
+
+#container{
+	margin:auto;
+	width:981px;	
+	border: 0px solid red;
+}

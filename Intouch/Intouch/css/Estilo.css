@@ -1,0 +1,1709 @@
+﻿html > body .Site
+{
+	height: auto;
+}
+
+body
+{
+	background: url(  "../img/Site-BgGeral.jpg" ) repeat-x top;
+	font: 12px 'UbuntuRegular';
+	color: #333333;
+}
+
+a
+{
+	color: #3B6F9D;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: #001E47;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-weight: normal !important;
+}
+
+strong
+{
+	font-family: 'UbuntuBold';
+}
+
+.Site
+{
+	width: 960px;
+	margin: 0 auto;
+	height: 480px;
+	min-height: 480px;
+	clear: both;
+}
+
+.Cabecalho
+{
+	height: 120px;
+}
+
+.Topo
+{
+	height: 46px;
+}
+
+.Topo ul.menubar .submenu
+{
+	list-style: none;
+	float: left;
+}
+
+.Topo ul.menubar li
+{
+	width: auto;
+	float: left;
+}
+
+.Topo ul.menubar ul.menu
+{
+	display: none;
+	margin: 0;
+	position: absolute;
+	z-index: 300;
+}
+
+/* 
+.Topo ul.menubar ul.menu{
+  display: none;
+  position: absolute;
+  margin: 0px;
+}
+*/
+
+.Topo ul.menubar ul.menu li
+{
+	width: 170px;
+	clear: both;
+}
+.Topo ul.menubar ul.menu li a
+{
+	color: #666666;
+	font-weight: normal;
+}
+.Topo ul.menubar ul.menu li a:hover
+{
+	color: #333333;
+	background: none;
+}
+
+.Topo ul.menubar a
+{
+	display: block;
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 12px 10px;
+}
+
+.Topo ul.menubar a:hover
+{
+	background: #3B6F9D;
+}
+
+.Topo ul.menu, ul.menu ul
+{
+	border: 2px solid #568EC0;
+	border-width: 0 2px 2px 2px;
+	width: 120px;
+	display: block;
+	background: url(../img/BgTrans.png);
+}
+
+.Topo ul.menu li
+{
+	position: relative;
+	list-style: none;
+	border: 0px;
+	width: 120px;
+	border-bottom: 1px solid #BCBCBC;
+	height: 40px;
+}
+
+.Topo ul.menu li a
+{
+	display: block;
+	text-decoration: none;
+	border-bottom: 0px;
+	height: 20px;
+}
+
+.Topo ul.menu li.submenu a
+{
+	font-weight: bold;
+}
+.Topo ul.menu li.submenu ul
+{
+	width: 170px;
+}
+.Topo ul.menu li.submenu ul.UsuarioItens li
+{
+	width: 170px;
+	clear: both;
+}
+.Topo ul.menu li.submenu ul.UsuarioItens li a
+{
+	color: #666666;
+	font-weight: normal;
+}
+.Topo ul.menu li.submenu ul.UsuarioItens li a:hover
+{
+	color: #333333;
+	background: none;
+}
+
+/* 
+.Topo ul.menu li a.DataFour:hover {background-position: -110px 0;}
+.Topo ul.menu li a.MetaData {background-position: 0 -40px;}
+.Topo ul.menu li a.MetaData:hover {background-position: -110px -40px;}
+.Topo ul.menu li a.DataCount {background-position: 0 -80px;}
+.Topo ul.menu li a.DataCount:hover {background-position: -110px -80px;}
+.Topo ul.menu li a.BrasilCluster {background-position: 0 -120px;}
+.Topo ul.menu li a.BrasilCluster:hover {background-position: -110px -120px;}
+*/
+
+.Topo ul.menu li sup
+{
+	font-weight: bold;
+	font-size: 7px;
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html .Topo ul.menu li
+{
+	float: left;
+	height: 1%;
+}
+* html .Topo ul.menu li a
+{
+	height: 1%;
+}
+/* End */
+
+.Topo ul.menu ul
+{
+	position: absolute;
+	display: none;
+}
+
+.Topo ul.menu li.submenu ul
+{
+	display: none;
+}
+/* Hide sub-menus initially */
+.Topo ul.menubar li.submenu
+{
+	background: url(  "../img/SetaSubmenu.png" ) no-repeat scroll center 40px transparent;
+	height: 46px;
+}
+.Topo ul.menubar li.Atual, ul.menubar li.Atual:hover
+{
+	background: url(  "../img/SetaAtual.png" ) no-repeat scroll center 34px transparent;
+}
+.Topo ul.menubar li.Atual2, ul.menubar li.Atual2:hover
+{
+	background: url(  "../img/SetaAtual.png" ) no-repeat scroll center transparent;
+	height: 46px;
+}
+
+.Topo ul.Usuario
+{
+	float: right;
+	color: #FFFFFF;
+}
+
+.Topo ul.Usuario li
+{
+	float: left;
+}
+
+.Topo ul.Usuario li a.Bt
+{
+	background: url(../img/Topo-BtIcones.png);
+	width: 18px;
+	height: 16px;
+	text-indent: -9999px;
+	display: block;
+	margin: 12px 8px;
+	padding: 0;
+}
+
+.Topo ul.Usuario li a.Bt:hover
+{
+	background: url(../img/Topo-BtIcones.png);
+}
+
+.Topo ul.Usuario li a.Salvar
+{
+}
+.Topo ul.Usuario li a.Salvar:hover
+{
+	background-position: 0 -16px;
+}
+.Topo ul.Usuario li a.Email
+{
+	background-position: -18px 0;
+}
+.Topo ul.Usuario li a.Email:hover
+{
+	background-position: -18px -16px;
+}
+.Topo ul.Usuario li a.Imprimir
+{
+	background-position: -36px 0;
+}
+.Topo ul.Usuario li a.Imprimir:hover
+{
+	background-position: -36px -16px;
+}
+.Topo ul.Usuario li a.Cifrao
+{
+	background-position: -54px 0;
+}
+.Topo ul.Usuario li a.Cifrao:hover
+{
+	background-position: -54px -16px;
+}
+.Topo ul.Usuario li a.Fechar
+{
+	background-position: 24px -32px;
+	text-indent: 0;
+	width: 40px;
+	margin: 12px 0 12px 10px;
+	color: #A5C1DC;
+}
+.Topo ul.Usuario li a.Fechar:hover
+{
+	background-position: 24px -48px;
+	color: #FFFFFF;
+}
+
+
+.Topo ul.Usuario li a
+{
+	text-indent: 0;
+	background: none;
+}
+
+.Topo ul.Usuario li.submenu a
+{
+	font-weight: bold;
+}
+.Topo ul.Usuario li.submenu ul
+{
+	width: 170px;
+}
+.Topo ul.Usuario li.submenu ul.UsuarioItens li
+{
+	width: 170px;
+	clear: both;
+}
+.Topo ul.Usuario li.submenu ul.UsuarioItens li a
+{
+	color: #666666;
+	font-weight: normal;
+}
+.Topo ul.Usuario li.submenu ul.UsuarioItens li a:hover
+{
+	color: #333333;
+	background: none;
+}
+
+.LogoProduto
+{
+	float: left;
+	margin: 10px 0 0 0;
+}
+
+.Logotipo
+{
+}
+.Logotipo h1 a
+{
+	width: 149px;
+	height: 46px;
+	text-indent: -9999px;
+	display: block;
+	background: url(../img/Cabecalho-LogoUnitfour.png);
+	margin: 10px 0 0 0;
+	float: left;
+}
+
+.Logotipo .Mascote
+{
+	float: right;
+	width: 720px;
+	margin: 8px 0 0 0;
+}
+
+.Logotipo .Mascote .Texto
+{
+	float: left;
+	background: url(../img/Cabecalho-SetaTexto.jpg) #A5C1DC no-repeat right;
+	height: 39px;
+	padding: 7px 15px 5px 10px;
+	width: 634px;
+}
+
+.Logotipo .Mascote h2 a
+{
+	width: 53px;
+	height: 58px;
+	text-indent: -9999px;
+	display: block;
+	background: url(../img/Cabecalho-IconRobo.jpg);
+	float: right;
+}
+
+.Logotipo .Mascote .Fechar
+{
+	background: url(../img/Topo-BtIcones.png) transparent;
+	background-position: 0 -32px;
+	width: 16px;
+	height: 16px;
+	display: block;
+	text-indent: -9999px;
+	margin: -8px;
+	position: absolute;
+	border: 0;
+}
+.Logotipo .Mascote .Fechar:hover
+{
+	background-position: 0 -48px;
+}
+
+.Meio
+{
+	padding: 20px 0 0 0;
+	width: 960px;
+}
+
+.Meio h1
+{
+	font-size: 26px;
+	letter-spacing: -1px;
+	color: #0075C6;
+	margin: 0 0 5px 0;
+	font-weight: normal;
+}
+
+.Meio h2
+{
+	font-size: 14px;
+	margin: 0 0 5px 0;
+	font-weight: normal;
+}
+
+.Meio .Produtos
+{
+	float: left;
+	width: 620px;
+}
+
+.Meio .Produtos div
+{
+	float: left;
+	width: 295px;
+	padding: 20px 15px 0 0;
+}
+
+.Meio .Produtos div h3
+{
+	width: 177px;
+	height: 32px;
+	background: url(../img/Meio-LogosProdutos.png);
+	text-indent: -9999px;
+}
+
+.Meio .Produtos div h3.DataFour
+{
+	background-position: 0 0;
+}
+.Meio .Produtos div h3.MetaData
+{
+	background-position: 0 -32px;
+}
+.Meio .Produtos div h3.DataCount
+{
+	background-position: 0 -64px;
+}
+.Meio .Produtos div h3.ClusterBrasil
+{
+	background-position: 0 -96px;
+}
+.Meio .Produtos div h3.IncentivoUnit
+{
+	background-position: 0 -160px;
+}
+
+
+.Meio .Produtos div p
+{
+	padding: 0 0 0px 38px;
+}
+
+.Meio .Links
+{
+	width: 800px;
+	padding: 0;
+	clear: both;
+}
+
+.Meio .Links p
+{
+}
+
+.Meio .Links div
+{
+	float: left;
+	padding: 0 0px 0 0;
+	width: 160px;
+}
+
+.Meio .Busca
+{
+	display: none;
+}
+
+.Meio .Busca .BuscaAvancada
+{
+	float: right;
+	padding: 5px 10px 0 0;
+	text-align: right;
+	width: 710px;
+}
+
+.Meio .Busca .BuscaAvancada div
+{
+	text-align: left;
+}
+
+.Meio .Busca .BuscaAvancada a
+{
+	font-size: 11px;
+}
+
+.Meio .Busca .FormBusca
+{
+	background: none repeat scroll 0 0 #EBEBEB;
+	margin: 19px 0 0 0;
+	padding: 10px 10px 10px 30px;
+	display: block;
+	width: auto;
+	height: 42px;
+	float: right;
+}
+
+.Meio .Busca .FormBusca .CampoBusca
+{
+	width: 460px;
+	margin: 0 20px;
+	font-size: 16px;
+	padding: 7px;
+	float: left;
+}
+
+.Meio .Busca .FormBusca div
+{
+	float: left;
+}
+
+.Meio .Busca .FormBusca h3
+{
+	font-size: 16px;
+	color: #666666;
+	line-height: 40px;
+	float: left;
+}
+
+.Meio .Consulta
+{
+	float: right;
+	width: 720px;
+	margin: 10px 0 0 0;
+}
+
+.Meio h5
+{
+	border-bottom: 1px solid #396C9A;
+	font-size: 16px;
+	color: #396D9B;
+	margin: 10px 0 13px 0;
+}
+
+.Meio h5.Junto
+{
+	border-bottom: 1px solid #396C9A;
+	font-size: 16px;
+	color: #396D9B;
+	margin: 10px 0 -2px;
+}
+
+.Meio .Consulta .Info
+{
+	background: none repeat scroll 0 0;
+	float: left;
+	padding: 6px 0 0 6px;
+	width: 330px;
+}
+
+.Meio .Consulta .Info p
+{
+	float: left;
+	margin: 0 0 10px;
+}
+
+.Meio .Consulta .NovoItem label
+{
+	padding: 0 0 0 15px;
+}
+
+.Meio .Consulta .NovoItem
+{
+	padding: 10px;
+	background: #EBEBEB;
+	margin: 0 0 20px 0;
+	clear: both;
+	float: left;
+	display: block;
+	width: 700px;
+	text-align: right;
+}
+
+.BoxLogin
+{
+	float: right;
+	width: 280px;
+	background: url(../img/Login-BgLogo.jpg) #F7F7F7 no-repeat bottom right;
+	padding: 20px;
+}
+
+.Clear
+{
+	clear: both;
+}
+
+.BoxLogin .Cabec
+{
+	height: 60px;
+}
+
+.BoxLogin .Rodape
+{
+	width: 280px;
+	height: 40px;
+	padding: 14px 0 0 0;
+}
+
+.BoxLogin .Rodape .Txt
+{
+	float: left;
+	width: 100px;
+}
+
+.BoxLogin h1
+{
+	width: 150px;
+	height: 43px;
+	text-indent: -9999px;
+	background: url(../img/Login-LogoInTouch.png);
+	float: right;
+}
+
+.BoxLogin h2
+{
+	font: 20px 'UbuntuBold';
+	color: #A0A0A0;
+	float: left;
+}
+
+.BoxLogin h4
+{
+	font-size: 10px;
+	width: 200px;
+	font-weight: normal;
+}
+
+.BoxLogin .Form
+{
+	clear: both;
+	display: block;
+	margin: 0;
+}
+
+.BoxLogin .Form label
+{
+	margin: 10px 0 4px;
+	float: left;
+}
+
+.Campos
+{
+	border: 1px solid #CECECE;
+	padding: 10px;
+	margin: 0;
+	font: 12px 'UbuntuRegular';
+	border-radius: 3px;
+}
+
+.CamposMd
+{
+	border: 1px solid #CECECE;
+	padding: 2px 0 0 4px;
+	margin: 0 16px 0 5px;
+	font: 12px 'UbuntuRegular';
+	border-radius: 2px;
+	height: 22px;
+}
+
+.Campos:focus, .CamposMd:focus
+{
+	border: 1px solid #3B6F9D;
+}
+
+.CamposPq
+{
+	border: 1px solid #CECECE;
+	padding: 0px 0 4px 4px;
+	margin: 0 16px 0 5px;
+	font: 11px 'UbuntuRegular';
+	border-radius: 2px;
+	height: 17px;
+}
+
+.LinhaForm
+{
+	width: 720px;
+	margin: 0 0 10px 0;
+	float: left;
+}
+.Auto
+{
+	width: 335px !important;
+}
+.Central
+{
+	width: 960px;
+	text-align: center;
+}
+.Central p.TotalGeral
+{
+	text-align: center;
+	padding: 20px 0 0 0;
+}
+.Central div
+{
+	padding: 20px 0 0 0;
+}
+
+.Coluna1, .Coluna2
+{
+	width: 300px !important;
+	float: left;
+}
+.Coluna3
+{
+	width: 340px !important;
+	float: right;
+}
+.Coluna1 .LinhaForm
+{
+	width: 280px;
+}
+.Coluna2 .LinhaForm
+{
+	width: 300px;
+	padding: 0 0 0 20px;
+}
+.Coluna3 .LinhaForm
+{
+	width: 340px;
+}
+
+.LinhaForm .Txt
+{
+	width: 130px;
+	text-align: right !important;
+	float: left;
+	margin: 0 0 0 0;
+}
+.LinhaForm .Txt2
+{
+	width: 80px;
+	text-align: right;
+	float: left;
+	margin: 0 0 0 0;
+}
+.LinhaForm .Txt3
+{
+	width: 120px;
+	text-align: right;
+	float: left;
+	margin: 0 0 0 0;
+}
+.LinhaForm label
+{
+	line-height: 26px !important;
+	height: 26px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+table.Resultado
+{
+	width: 720px;
+	float: left;
+	padding: 0 0 3px 0;
+}
+table.Resultado tr
+{
+}
+table.Resultado td
+{
+	padding: 5px 0 5px 0;
+	border-bottom: 1px solid #EBEBEB;
+}
+table.Resultado .Estrelas
+{
+	float: left;
+	padding: 6px 10px 0 10px;
+}
+table.Resultado td.Validacao
+{
+	float: left;
+	padding: 0;
+}
+
+table.Resultado .Validacao tr
+{
+	border: 0;
+}
+
+.LinhaForm2
+{
+	width: 720px;
+	margin: 10px 0 0 0;
+	float: left;
+	border-bottom: 1px solid #EBEBEB;
+	padding: 0 0 3px 0;
+}
+.LinhaForm2 .Estrelas
+{
+	float: left;
+	padding: 6px 10px 0 10px;
+}
+.LinhaForm2 .Estrelas a
+{
+	background: url(../img/EstrelasBg.png) no-repeat;
+	width: 14px;
+	height: 14px;
+	display: block;
+	float: left;
+	margin: 0 4px 0 0;
+}
+
+.LinhaForm2 .Estrelas a.Aceso
+{
+	background-position: 0 0;
+}
+
+.LinhaForm2 .Estrelas a.Apagado
+{
+	background-position: -14px 0;
+}
+
+.LinhaForm2 .Validacao
+{
+	margin: 6px 0 0 0;
+	float: left;
+}
+
+.Validacao td
+{
+	border: 0 !important;
+}
+
+.Btn
+{
+	background: url(../img/BgButton_Intouch.jpg) repeat-x;
+	height: 40px;
+	font: 12px 'UbuntuRegular';
+	color: #FFFFFF;
+	border-radius: 3px;
+	border: 0;
+	font-weight: bold;
+}
+
+.BtnMedio
+{
+	background: url(../img/Btn-BgMedio.png) #A5C1DC no-repeat 0 0;
+	height: 26px;
+	font: 12px 'UbuntuRegular';
+	color: #000;
+	border-radius: 0 3px 3px 0;
+	border: 0;
+	padding: 0 7px 0 32px;
+	display: block;
+	line-height: 26px;
+}
+
+.BtnMedio:hover
+{
+	text-decoration: none;
+}
+
+.BtnConsultar
+{
+	background: url(../img/Btn-BgAgendar.jpg) #A5C1DC no-repeat 0 0;
+	height: 40px;
+	font: 12px 'UbuntuRegular';
+	color: #000;
+	border-radius: 0 3px 3px 0;
+	border: 0;
+	padding: 0 7px 0 48px;
+}
+
+.BtnAnterior
+{
+	background: url(../img/Btn-BgMedio.png) #A5C1DC no-repeat 0 -130px;
+	height: 26px;
+	font: 12px 'UbuntuRegular';
+	color: #000;
+	border-radius: 0 3px 3px 0;
+	border: 0;
+	padding: 0 7px 0 32px;
+	margin: 0 10px;
+}
+
+.BtnProximo
+{
+	background: url(../img/Btn-BgMedio.png) #A5C1DC no-repeat right -156px;
+	height: 26px;
+	font: 12px 'UbuntuRegular';
+	color: #000;
+	border-radius: 3px 0 0 3px;
+	border: 0;
+	padding: 0 32px 0 7px;
+	margin: 0 10px;
+}
+
+.Right
+{
+	float: right;
+}
+.Left
+{
+	float: left;
+}
+
+.BtnPeq
+{
+	width: 80px;
+	float: right;
+}
+
+.Grande460
+{
+	width: 460px;
+}
+.Grande380
+{
+	width: 380px;
+}
+.Medio
+{
+	width: 258px;
+}
+.Medio200
+{
+	width: 190px;
+}
+.Pequeno
+{
+	width: 53px;
+}
+.Pequeno2
+{
+	width: 120px;
+}
+.Pequeno3
+{
+	width: 66px;
+}
+.Pequeno4
+{
+	width: 100px;
+}
+.Pequeno5
+{
+	width: 55px;
+}
+.AtualizarStatus
+{
+	width: 130px;
+}
+.Pequeno40
+{
+	width: 40px;
+}
+.Pequeno150
+{
+	width: 150px;
+}
+.Pequeno160
+{
+	width: 160px;
+}
+.Pequeno26
+{
+	width: 26px;
+	padding: 0 !important;
+	background-position: 0 -104px;
+	margin: 0 30px 0 0;
+}
+.Pequeno26-2
+{
+	width: 26px;
+	padding: 0 !important;
+	background-position: 0 -104px;
+	margin: 0 20px 0 0;
+}
+
+.BtnBuscar
+{
+	width: 26px;
+	padding: 0 !important;
+	background-position: 0 -52px;
+	margin: 5px 10px 0 0;
+	float: right;
+}
+.BtnNovoItem
+{
+	width: 26px;
+	padding: 0 !important;
+	background-position: 0 -78px;
+	margin: 0;
+	float: right;
+}
+
+.Radio
+{
+	padding: 4px 0 0 7px;
+	float: left;
+}
+.Radio2
+{
+	padding: 0 0 0 0;
+	float: left;
+}
+
+span.RadioSpan
+{
+	padding: 0 0 0 10px;
+}
+span.RadioSpan label
+{
+	padding: 0 8px 0 3px !important;
+}
+
+.Label2
+{
+	padding: 0 7px 10px 3px !important;
+	float: left;
+}
+
+.LateralPerfil
+{
+	width: 210px;
+	float: left;
+	margin: 0 30px 0 0;
+	display: none;
+}
+
+.LateralPerfil div
+{
+	margin: 0 0 10px 0;
+	clear: both;
+}
+
+.LateralPerfil div.Ultimo ul
+{
+	margin: 0;
+	font-size: 20px;
+	display: block;
+}
+
+.LateralPerfil div ul div{ margin:0 auto;}
+.LateralPerfil div ul
+{
+	padding: 10px 10px 10px 0px;
+}
+
+.LateralPerfil ul
+{
+	background: #EBEBEB;
+	width: 200px;
+}
+
+.LateralPerfil ul li
+{
+	height: 30px;
+	line-height: 30px;
+	padding: 0 0 0 10px;
+	width: auto;
+	display: block;
+}
+
+li.Separador
+{
+	height: 13px !important;
+	margin: 0;
+}
+li.Separador hr
+{
+	height: 0px;
+	margin: 10px 0 0 0;
+	padding: 0 0 0;
+	display: block;
+	border: 1px solid #A3B9CD;
+}
+
+.LateralPerfil ul li.Atual
+{
+	background: url(../img/Perfil-BgSetas.png) #A5C1DC no-repeat 0 0;
+}
+
+.LateralPerfil ul li.Atual a
+{
+	background: #EBEBEB;
+	width: 180px;
+}
+
+.LateralPerfil ul li.Atual2Linhas
+{
+	margin: 0 0 7px 0 !important;
+	background: url(../img/Perfil-BgSetas.png) no-repeat 0 0;
+	float: left;
+	width: 180px;
+}
+
+.LateralPerfil ul li.Atual2Linhas span
+{
+	margin: 0 0 7px 0 !important;
+	float: left;
+	color: #3b6f9d;
+	padding-left: 10px;
+	line-height: 12px;
+	width: 180px;
+}
+
+.LateralPerfil ul li.Atual2Linhas a
+{
+	line-height: 15px !important;
+}
+
+
+.LateralPerfil ul li a
+{
+	display: block;
+	padding: 0 0 0 10px;
+	width: auto;
+	height: 30px;
+	line-height: 30px;
+}
+
+.LateralPerfil ul li a:hover, .LateralPerfil ul li.Atual a:hover
+{
+	background: url(../img/Perfil-BgSetas.png) #A5C1DC no-repeat 0 -30px;
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+	height: 30px;
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html .LateralPerfil ul li
+{
+	float: left;
+	height: 1%;
+}
+* html .LateralPerfil ul li a
+{
+	height: 1%;
+}
+/* End */
+
+.LateralPerfil h1
+{
+	color: #B5B5B5;
+	font: 16px 'UbuntuBold';
+	margin: 0 0 -2px 0;
+}
+
+.RodapeAuto
+{
+	width: auto;
+	background: #EBEBEB;
+	clear: both;
+	margin: 30px 0 0;
+}
+
+.Rodape
+{
+	width: 960px;
+	margin: 0 auto;
+	height: 40px;
+}
+
+.Rodape p
+{
+	line-height: 40px;
+	font-size: 10px;
+	float: left;
+	color: #9F9F9F;
+}
+
+.Rodape h1 a
+{
+	width: 74px;
+	height: 22px;
+	background: url(  "../img/Site-LogosUnifour.png" );
+	float: right;
+	text-indent: -9999px;
+	margin: 8px 0 0;
+}
+
+.Table700, .Table960, .visualizar, .TableCinza
+{
+	padding: 0;
+	margin: 2px 0 0 0;
+	background: #F8F8F8;
+}
+
+.Table700
+{
+	width: 720px;
+}
+.Table960, .TableCinza
+{
+	width: 960px;
+}
+.TableTxt10
+{
+	font-size: 10px;
+}
+.visualizar
+{
+	width: 99%;
+	font-size: 10px;
+	margin: 16px 0 0 0;
+}
+
+
+.Table700 thead, .Table700 .Header, .Table960 thead, .Table960 .Header, .visualizar .Header, .Resultado .Header
+{
+	background: #3B6F9D;
+	border-collapse: collapse;
+	color: #FFFFFF !important;
+}
+
+.Header td a
+{
+	color: #FFFFFF !important;
+	font-size: 12px !important;
+}
+
+.Footer td a
+{
+	color: #FFFFFF !important;
+	font-size: 12px !important;
+}
+
+.TableCinza .Header
+{
+	background: #999999;
+	border-collapse: collapse;
+	color: #FFFFFF;
+}
+
+.TableCinza .Header a
+{
+	color: #FFFFFF;
+}
+
+.TableTxt10 .Header td
+{
+	padding: 7px 4px !important;
+}
+.TableCinza .Header td
+{
+	padding: 7px !important;
+}
+.Table960TxtMenor td
+{
+	padding: 7px 4px !important;
+}
+
+.Table700 td, .Table960 td, .TableTxt10 td
+{
+	padding: 10px;
+	border-bottom: 1px solid #3B6F9D;
+	font-size: 11px;
+}
+
+.TableCinza td
+{
+	padding: 7px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.Table960 .Footer
+{
+	background: #FFFFFF;
+	text-align: center;
+}
+
+.Table960 .Footer span
+{
+	background: #A5C1DC;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin: 0 20px;
+	width: 100px;
+}
+
+.Table960 .Footer a
+{
+	background: #3B6F9D;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin: 0 20px;
+	width: 100px;
+	color: #FFFFFF;
+}
+
+.Table960 .Footer td
+{
+	border: 0;
+	padding: 16px 0 20px !important;
+}
+
+.visualizar td
+{
+	padding: 4px;
+	border-bottom: 1px solid #3B6F9D;
+}
+
+TableTxt10 td
+{
+	padding: 8px 4px;
+}
+
+.visualizar .Coluna3
+{
+	width: 124px !important;
+	float: left;
+	text-align: right;
+}
+
+.visualizar .Coluna4
+{
+	width: 490px;
+	float: right;
+}
+
+.Table700 tr.Listra, .Table960 tr.Listra, .visualizar .Listra, .TableTxt10 tr.Listra
+{
+	background: #EBEBEB !important;
+}
+
+.TableCinza tr.Listra
+{
+	background: #EDEDED !important;
+}
+
+.ModalLayout
+{
+	background: url(../img/Modal_BgCabecalho.jpg) top no-repeat #FFFFFF;
+	width: 660px;
+	padding: 20px;
+	height: 400px;
+	overflow: auto;
+}
+
+.ModalLayout h1
+{
+	font-size: 14px;
+	margin: 0 0 10px 0;
+}
+
+.ModalLayout a
+{
+}
+
+.ModalLayout div.Right
+{
+	float: right;
+	width: 120px;
+	text-align: right;
+}
+
+.ModalLayout .BuscaCEP
+{
+	clear: both;
+	padding: 0 0 30px;
+}
+
+.BtBuscaCEP
+{
+	margin: 0 0 -9px -9px;
+}
+.BtSalvar
+{
+	margin: 0 0 0 10px;
+}
+
+.ModalLayout ul.Botoes
+{
+	clear: both;
+	float: right;
+	color: #FFFFFF;
+}
+
+.ModalLayout ul.Botoes li
+{
+	float: left;
+}
+
+.ModalLayout ul.Botoes li .Edit
+{
+	float: left;
+	margin: 20px 0 0 8px;
+}
+
+.ModalLayout ul.Botoes li.SalvarCancelar .ic_funcao1
+{
+	width: 30px !important;
+}
+
+.ImgSpc
+{
+	margin: 0 0 0 124px;
+}
+
+.ModalLayout ul.Botoes li.SalvarCancelar
+{
+	float: left;
+	margin: 20px 0 0 8px;
+}
+
+
+.ModalLayout ul.Botoes li a.Bt
+{
+	background: url(../img/Topo-BtIcones.png);
+	width: 18px;
+	height: 16px;
+	text-indent: -9999px;
+	display: block;
+	margin: 20px 0 0 10px;
+	padding: 0;
+}
+
+.ModalLayout ul.Botoes li a.Salvar
+{
+	background-position: 0 -16px;
+}
+.ModalLayout ul.Botoes li a.Email
+{
+	background-position: -18px -16px;
+}
+.ModalLayout ul.Botoes li a.Imprimir
+{
+	background-position: -36px -16px;
+}
+.ModalLayout ul.Botoes li.Edit
+{
+}
+
+.Avancadas
+{
+	width: 680px;
+	background: url(../img/Avancadas_BgGeral.jpg) top no-repeat #A5C1DC;
+	padding: 33px 20px 20px 20px;
+	float: left;
+	margin: 0 0 20px 0;
+}
+
+.Avancadas .Cabecalho
+{
+	height: 40px;
+}
+
+.Avancadas h1, .Avancadas h2
+{
+	margin: 0 94px 0 0;
+	float: left;
+}
+
+.Avancadas h1
+{
+	color: #001E46;
+	font-size: 16px;
+}
+
+.Avancadas h2
+{
+	font-size: 12px;
+}
+
+.Avancadas input[type=radio]
+{
+	margin: 0 5px 0 20px;
+}
+
+.Avancadas .Filtros
+{
+	padding: 0px;
+}
+
+.Avancadas .Filtros ul
+{
+	margin: 0 0 0 1px;
+	padding: 0;
+	background: #5E88AD;
+	float: left;
+	width: 678px;
+}
+
+.Avancadas .Filtros ul li
+{
+	display: inline;
+	float: left;
+	width: 112px;
+	text-align: center;
+	border-right: 1px solid #A5C1DC;
+}
+
+.Avancadas .Filtros ul li a
+{
+	color: #FFFFFF;
+	line-height: 30px;
+}
+
+.CamposFiltros h3
+{
+	font-size: 14px;
+	color: #001E46;
+	padding: 10px 0;
+	width: 680px;
+}
+
+.CamposFiltros .LinhaForm
+{
+	width: 700px;
+}
+
+.CamposFiltros .LinhaForm .Txt
+{
+	padding: 4px 3px 0 0;
+}
+
+.LimparCampos
+{
+	background: #DEDEDE;
+	float: right;
+	margin: 0 20px 0 0;
+	padding: 5px 8px;
+	border-radius: 3px;
+}
+
+#DIV_POR_NOME, #DIV_POR_TELEFONE, #DIV_POR_CEP, #DIV_POR_ENDERECO, #DIV_PLACA_VEICULO, #DIV1
+{
+	margin: 0px 0 -10px 0;
+	padding: 12px 0 0 0;
+	float: left;
+	background: url(../img/Avancadas_SetaOpçao.jpg) no-repeat;
+}
+
+#DIV_POR_NOME
+{
+	background-position: 42px 0 !important;
+}
+#DIV_POR_TELEFONE
+{
+	background-position: 155px 0 !important;
+}
+#DIV_POR_CEP
+{
+	background-position: 268px 0 !important;
+}
+#DIV_POR_ENDERECO
+{
+	background-position: 381px 0 !important;
+}
+#DIV_PLACA_VEICULO
+{
+	background-position: 494px 0 !important;
+}
+#DIV1
+{
+	background-position: 607px 0 !important;
+}
+
+.TotalConsultas
+{
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+	float: left;
+	width: 960px;
+	margin: 20px 0 10px 0;
+}
+
+.TotalConsultas p
+{
+	text-align: right;
+}
+
+.TotalConsultas span a
+{
+	padding: 7px;
+	display: block;
+}
+
+.BannersHome
+{
+	width: 960px;
+	padding: 20px 0 0 0;
+	clear: both;
+}
+
+.BannersHome .BannerDefault
+{
+	float: left;
+	width: 720px;
+}
+
+.BannersHome .BannerCampanha
+{
+	float: right;
+	width: 220px;
+	margin: -48px 0 0;
+}
+
+.opcional
+{
+	width: 690px;
+	height: 63px;
+	background: url(../img/img-opcional.png);
+	line-height: 19px;
+	padding: 15px;
+	float: left;
+	color: #fff;
+	margin: 0 0 20px;
+}
+.opcional h2
+{
+	color: #FFFFFF;
+	font-size: 19px;
+}
+
+.opcional a
+{
+	color: #fff;
+}
+.opcional strong
+{
+	color: #FFFFFF;
+	font-family: 'UbuntuBold';
+}
+
+.opcionalformata
+{
+    clear: both;
+    float: left;
+    font: 13px 'UbuntuRegular';
+    margin: 13px 0 0;
+    width: 370px !important;
+}
+
+.opcionalformataCpf
+{
+	float: left;
+	font: 15px/4px 'UbuntuBold';
+	margin: 12px -5px 0 0;
+	padding: 8px;
+	color: #133963;
+}
+.opcionalformata1
+{
+	float: left;
+	margin: 5px 5px 0 5px;
+	font: 15px 'UbuntuRegular';
+	padding: 3px 5px;
+	color: #666;
+	
+	border: 1px solid #CECECE;
+	border-radius: 3px;
+}
+.btn-continuar
+{
+	float: left;
+	margin: -2px 0px 0 10px;
+	
+}
+.topo-box
+{
+	width:185px; height:45px;  background: url(../img/topo-box-atualize.png);}
+	
+	.bottom-box
+{
+	width:185px; height:25px;  background: url(../img/bottom-atualize.png);}
+	
+	/*Ajax consulta INSS*/
+	
+	.ajax__tab_xp .ajax__tab_body {
+    background-color: #FFFFFF;
+    border-color: -moz-use-text-color #999999 #999999;
+    border-right: 1px solid #999999;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    font: 11px 'UbuntuRegular' !important;
+    padding: 8px;
+}
+
+.ajax__tab_xp .ajax__tab_active .ajax__tab_tab, .ajax__tab_xp .ajax__tab_tab
+{
+	    font: 12px 'UbuntuBold' !important;}
+	    
+.boxAtualize{width:185px; border: 1px solid #fff; background:#87b0f6;}
+	    
+.modalMsg { width:500px; height:90px; border:4px solid #ccc; line-height:60px; margin-top:10px; background:#fff; color:#1a1a1a;}	    
+.modalMsg-topo{ width:400px; height:30px; padding:5px; background:#ccc;}
+
+.boxInss{background-color:#bbcce5; padding: 5px; color:#2a4b83;}
+.boxInss u{ text-decoration:none; color:#1a1a1a; font-weight:bold; margin-bottom:5px; }
+.boxInss table td{padding-left:5px;}
+
+.BoxAtualizeHome 
+{
+    border: 17px solid #D6E2EE;
+    margin: 48px 0 0;
+    }
+    
+.BoxAtualizeHome .MeioBoxAtualize 
+{
+    height: 124px;
+    }
+
+
+
+	
+	

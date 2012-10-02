@@ -1,0 +1,12 @@
+.linkImagem {
+	FONT-SIZE: 9px; FLOAT: none; COLOR: #3366cc; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.linkSom {
+	FONT-SIZE: 9px; FLOAT: none; COLOR: #3366cc; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.textoInformativo {
+	MARGIN-TOP: 0px; FONT-SIZE: 9px; FLOAT: none; COLOR: #24498a; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none; margin-botton: 0px
+}
+LABEL {
+	DISPLAY: block; FONT-SIZE: 13px; FLOAT: left; FONT-FAMILY: Arial; TEXT-ALIGN: right
+}

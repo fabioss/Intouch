@@ -1,0 +1,81 @@
+﻿body {
+	font-family: Arial, Verdana, Tahoma, Sans-Serif;
+	font-size: 12px;
+}
+#cadastrarIP{
+	background:url(../img/bg_cadastrar_ip.jpg) repeat-x;	
+	margin:auto;
+	width:575px;
+	height:540px;
+	border:1px solid #c3c3c3;
+}
+.linha1_cadastrar{
+	border:0px solid red;
+	margin:0 0 0 0;
+	width:530px; height:32px;			
+}
+.ip_nameComboBoxCliente{
+	border:0px solid red;
+	width:132px; height:15px;	
+	margin:14px 0 0 37px;	
+	font-weight: bold;
+    color:#0058e2;	
+	float:left;		
+}
+.ComboBoxCliente{
+	border: none;
+	margin:5px 0 0 0;
+	float:left;		
+}
+
+.linha2_cadastrar{
+	border:0px solid red;
+	width:530px; height:50px;			
+	margin:0 0 0 0;
+}
+.ip_nameAdicionar{
+	display: block;
+	border:0px solid red;
+	width:100px; height:15px;	
+	margin:21px 0 0 32px;	
+	font-weight: bold;
+    color:#5a5a5a;	
+	float:left;			
+}
+
+.ip_imputAdicionar{	
+	border:none;
+	background: transparent;
+	width:325px; height:20px;			
+	margin-top:20px;
+	float:left;
+}
+.imput{
+    color:#000;
+    float:left;				
+}
+.ckbProcon{
+	display: block;
+	width: 175px;
+	margin-left: 10px;
+    float:left;
+}
+.ip_botaoAdicionar{
+	border:0px solid red;
+	width:33px;	height:26px;			
+	margin:15px 0 0 10px;
+	float:left;	
+}
+
+.cadastrarIP_gride{
+	border:0px solid red;
+	width:495px; height:385px;
+	margin:28px 0 0 17px;
+	overflow:auto;
+	scrollbar-arrow-color:#5a5a5a;	
+	scrollbar-face-color: #5a5a5a;
+	scrollbar-face-color:#fff;
+	scrollbar-dark-shadow-color: #5a5a5a;
+	scrollbar-shadow-color:#fff;
+	scrollbar-track-color:#f5f5f5;		
+}

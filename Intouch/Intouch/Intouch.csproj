@@ -1,0 +1,813 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1604728F-D206-4A2E-9183-D9630A423B4B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Intouch</RootNamespace>
+    <AssemblyName>Intouch</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="BIUnit4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\BIUnit4.dll</HintPath>
+    </Reference>
+    <Reference Include="DataFourLib, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\DataFourLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DllPainelDeControle, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\DllPainelDeControle.dll</HintPath>
+    </Reference>
+    <Reference Include="DLLUnitShop, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\DLLUnitShop.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.Web, Version=7.0.27.2, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\EO.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="evohtmltopdf, Version=2.5.0.0, Culture=neutral, PublicKeyToken=5b5f377bc08a4d32, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\evohtmltopdf.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.5.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=1.0.2686.32869, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\Microsoft.Practices.EnterpriseLibrary.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security.Cryptography, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="ProjetoFinanceiroORM.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\ProjetoFinanceiroORM.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjetoFinanceiroORM.Data.SqlClient, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\ProjetoFinanceiroORM.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjetoFinanceiroORM.Entities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\ProjetoFinanceiroORM.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjetoFinanceiroORM.Services, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\ProjetoFinanceiroORM.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjetoFinanceiroORM.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\ProjetoFinanceiroORM.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\System.Web.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\System.Web.DataVisualization.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\System.Windows.Forms.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\Proj\Intouch\bin\System.Windows.Forms.DataVisualization.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="acaomenu.aspx" />
+    <Content Include="BuscaApresentacao.aspx" />
+    <Content Include="css\cadIps.css" />
+    <Content Include="css\CSSintouch.css" />
+    <Content Include="css\CSSintouchClean.css" />
+    <Content Include="css\Estilo.css" />
+    <Content Include="css\layout.css" />
+    <Content Include="css\layoutClean.css" />
+    <Content Include="css\Reset.css" />
+    <Content Include="css\Ubuntu.css" />
+    <Content Include="css\Ubuntu\Ubuntu-B-webfont.svg" />
+    <Content Include="css\Ubuntu\Ubuntu-M-webfont.svg" />
+    <Content Include="css\Ubuntu\Ubuntu-R-webfont.svg" />
+    <Content Include="Default.aspx" />
+    <Content Include="empresa_arquivos\cabecalho.htm" />
+    <Content Include="empresa_arquivos\cnpjreva_solicitacao2.asp" />
+    <Content Include="empresa_arquivos\cnpjreva_solicitacao2_arquivos\captcha%281%29.gif" />
+    <Content Include="empresa_arquivos\cnpjreva_solicitacao2_arquivos\captcha.css" />
+    <Content Include="empresa_arquivos\cnpjreva_solicitacao2_arquivos\captcha.gif" />
+    <Content Include="empresa_arquivos\cnpjreva_solicitacao2_arquivos\captcha.js" />
+    <Content Include="empresa_arquivos\Common.css" />
+    <Content Include="empresa_arquivos\Principal.js" />
+    <Content Include="Erro.aspx" />
+    <Content Include="exportaExcel.aspx" />
+    <Content Include="HelloWorld\agenda.js" />
+    <Content Include="HelloWorld\calbtn.gif" />
+    <Content Include="HelloWorld\calbtn2.gif" />
+    <Content Include="HelloWorld\ipopeng.htm" />
+    <Content Include="HelloWorld\normal.css" />
+    <Content Include="HelloWorld\normal.js" />
+    <Content Include="HelloWorld\plugins.js" />
+    <Content Include="Home.aspx" />
+    <Content Include="Imagens\ajax-loader2.gif" />
+    <Content Include="Imagens\Aquario.bmp" />
+    <Content Include="Imagens\Aries.bmp" />
+    <Content Include="Imagens\background.jpg" />
+    <Content Include="Imagens\bg.jpg" />
+    <Content Include="Imagens\botao_01.png" />
+    <Content Include="Imagens\Botões\bt_buscar.jpg" />
+    <Content Include="Imagens\Botões\bt_buscar2.jpg" />
+    <Content Include="Imagens\Botões\bt_configuracoes.jpg" />
+    <Content Include="Imagens\Botões\bt_filtro_off.jpg" />
+    <Content Include="Imagens\Botões\bt_filtro_on.jpg" />
+    <Content Include="Imagens\Botões\bt_Inserir.png" />
+    <Content Include="Imagens\Botões\bt_Limpar.png" />
+    <Content Include="Imagens\Botões\bt_Localizar.png" />
+    <Content Include="Imagens\Botões\bt_pesquisa_cep_off.jpg" />
+    <Content Include="Imagens\Botões\bt_pesquisa_cep_on.jpg" />
+    <Content Include="Imagens\Botões\bt_pesquisa_endereco_off.jpg" />
+    <Content Include="Imagens\Botões\bt_pesquisa_endereco_on.jpg" />
+    <Content Include="Imagens\Botões\bt_pesquisa_nome_off.jpg" />
+    <Content Include="Imagens\Botões\bt_pesquisa_nome_on.jpg" />
+    <Content Include="Imagens\Botões\bt_pesquisa_placa_off.jpg" />
+    <Content Include="Imagens\Botões\bt_pesquisa_placa_on.jpg" />
+    <Content Include="Imagens\Botões\bt_pesquisa_telefone_off.jpg" />
+    <Content Include="Imagens\Botões\bt_pesquisa_telefone_on.jpg" />
+    <Content Include="Imagens\Botões\bt_Relatorio.png" />
+    <Content Include="Imagens\Botões\bt_Usuario.png" />
+    <Content Include="Imagens\Botões\ic_opcoes.jpg" />
+    <Content Include="Imagens\bt_Atualizar.png" />
+    <Content Include="Imagens\bt_Entrar_Login.jpg" />
+    <Content Include="Imagens\bt_Entrar_UP.jpg" />
+    <Content Include="Imagens\bt_Excluir.png" />
+    <Content Include="Imagens\bt_Inserir.png" />
+    <Content Include="Imagens\bt_Limpar.png" />
+    <Content Include="Imagens\bt_Localizar.png" />
+    <Content Include="Imagens\bt_Localizar02.png" />
+    <Content Include="Imagens\bt_Relatorio.png" />
+    <Content Include="Imagens\bt_Salvar.png" />
+    <Content Include="Imagens\bt_Usuario.png" />
+    <Content Include="Imagens\CAncer.bmp" />
+    <Content Include="Imagens\Capricornio.bmp" />
+    <Content Include="Imagens\clickcheckmm.gif" />
+    <Content Include="Imagens\clientes_01.gif" />
+    <Content Include="Imagens\clientes_08.gif" />
+    <Content Include="Imagens\Códigos_Cores\Código_Cores_01.jpg" />
+    <Content Include="Imagens\Códigos_Cores\Código_Cores_02.jpg" />
+    <Content Include="Imagens\Códigos_Cores\Código_Cores_03.jpg" />
+    <Content Include="Imagens\entrar.png" />
+    <Content Include="Imagens\Escorpiao.bmp" />
+    <Content Include="Imagens\estiloAjax.css" />
+    <Content Include="Imagens\ferramenta1.png" />
+    <Content Include="Imagens\ferramenta2.png" />
+    <Content Include="Imagens\Filete_Barra_Fundo.jpg" />
+    <Content Include="Imagens\Filete_Bg_Fundo.jpg" />
+    <Content Include="Imagens\Filete_Fundo_Globo.jpg" />
+    <Content Include="Imagens\GEmeos.bmp" />
+    <Content Include="Imagens\grafico_pizza.gif" />
+    <Content Include="Imagens\home.png" />
+    <Content Include="Imagens\Icons\application_key.png" />
+    <Content Include="Imagens\Icons\bt_atualizar.jpg" />
+    <Content Include="Imagens\Icons\cancelar.png" />
+    <Content Include="Imagens\Icons\delete.png" />
+    <Content Include="Imagens\Icons\detalhes.png" />
+    <Content Include="Imagens\Icons\editar.png" />
+    <Content Include="Imagens\Icons\excel_128-128.png" />
+    <Content Include="Imagens\Icons\ic_Abrir.png" />
+    <Content Include="Imagens\Icons\ic_inserir.png" />
+    <Content Include="Imagens\Icons\ic_Pesquisa_CPF.png" />
+    <Content Include="Imagens\Icons\ic_Pessoas_Ligadas.png" />
+    <Content Include="Imagens\Icons\ic_Ver.png" />
+    <Content Include="Imagens\Icons\ic_Voltar.png" />
+    <Content Include="Imagens\ic_Entrar_Login.png" />
+    <Content Include="Imagens\ic_stars_01.jpg" />
+    <Content Include="Imagens\ic_stars_02.jpg" />
+    <Content Include="Imagens\ic_stars_03.jpg" />
+    <Content Include="Imagens\ic_stars_04.jpg" />
+    <Content Include="Imagens\ic_stars_05.jpg" />
+    <Content Include="Imagens\ic_stars_06.jpg" />
+    <Content Include="Imagens\igpnl_office2k3_drk.png" />
+    <Content Include="Imagens\indicator.gif" />
+    <Content Include="Imagens\indicator_mozilla_blu.gif" />
+    <Content Include="Imagens\indicator_mozilla_yellow.gif" />
+    <Content Include="Imagens\indicator_remembermilk_orange.gif" />
+    <Content Include="Imagens\indicator_snake.gif" />
+    <Content Include="Imagens\Int22.gif" />
+    <Content Include="Imagens\Int22.jpg" />
+    <Content Include="Imagens\Intouch.jpg" />
+    <Content Include="Imagens\Intouch4.gif" />
+    <Content Include="Imagens\Intouch5.gif" />
+    <Content Include="Imagens\Intouch6.gif" />
+    <Content Include="Imagens\intouch_centro.jpg" />
+    <Content Include="Imagens\intouch_old.jpg" />
+    <Content Include="Imagens\intouch_old2.jpg" />
+    <Content Include="Imagens\intouch_teste.jpg" />
+    <Content Include="Imagens\Leao.bmp" />
+    <Content Include="Imagens\Libra.bmp" />
+    <Content Include="Imagens\logo.bmp" />
+    <Content Include="Imagens\lupa1.png" />
+    <Content Include="Imagens\lupa2.png" />
+    <Content Include="Imagens\Marca_InTouch_Globo.jpg" />
+    <Content Include="Imagens\Marca_InTouch_Globo.png" />
+    <Content Include="Imagens\Marca_na_Barra.jpg" />
+    <Content Include="Imagens\Marca_na_Barra.png" />
+    <Content Include="Imagens\Marca_Unitfour.jpg" />
+    <Content Include="Imagens\nova_faixa.png" />
+    <Content Include="Imagens\OK_128x128.png" />
+    <Content Include="Imagens\open.bmp" />
+    <Content Include="Imagens\openfold.bmp" />
+    <Content Include="Imagens\Peixes.bmp" />
+    <Content Include="Imagens\relatorio1.png" />
+    <Content Include="Imagens\relatorio2.png" />
+    <Content Include="Imagens\Sagitario.bmp" />
+    <Content Include="Imagens\Touro.bmp" />
+    <Content Include="Imagens\user.png" />
+    <Content Include="Imagens\users.png" />
+    <Content Include="Imagens\Virgem.bmp" />
+    <Content Include="Imagens\voltar.png" />
+    <Content Include="img\aba-notePad.jpg" />
+    <Content Include="img\addAnotacoes.jpg" />
+    <Content Include="img\aguarde.gif" />
+    <Content Include="img\aguarde2.gif" />
+    <Content Include="img\Avancadas_BgGeral.jpg" />
+    <Content Include="img\Avancadas_BgGeral.png" />
+    <Content Include="img\Avancadas_SetaOpçao.jpg" />
+    <Content Include="img\banner.jpg" />
+    <Content Include="img\BannerHome_Campanha.jpg" />
+    <Content Include="img\BannerHome_Default.jpg" />
+    <Content Include="img\BannerIn1.jpg" />
+    <Content Include="img\bannerIntouch.jpg" />
+    <Content Include="img\BannerIntouch_Campanha.jpg" />
+    <Content Include="img\bg-body-login.jpg" />
+    <Content Include="img\bg-body.jpg" />
+    <Content Include="img\bg.jpg" />
+    <Content Include="img\bgBronze.jpg" />
+    <Content Include="img\BgButton_InTouch.jpg" />
+    <Content Include="img\bgLinha_relatorio.gif" />
+    <Content Include="img\bgOuro.jpg" />
+    <Content Include="img\bgPage.jpg" />
+    <Content Include="img\bgPrata.jpg" />
+    <Content Include="img\BgTrans.png" />
+    <Content Include="img\bg_accordion_page.jpg" />
+    <Content Include="img\Bg_AutoComplete.png" />
+    <Content Include="img\Bg_AutoComplete_Hi.png" />
+    <Content Include="img\Bg_AutoComplete_High.png" />
+    <Content Include="img\bg_botoes_pessoasligadas.jpg" />
+    <Content Include="img\bg_cadastrar_ip.jpg" />
+    <Content Include="img\bg_cadastroCliente.jpg" />
+    <Content Include="img\bg_cadPessoasRestritas.jpg" />
+    <Content Include="img\bg_campo_filtro.jpg" />
+    <Content Include="img\bg_configCadastro.jpg" />
+    <Content Include="img\bg_dadoscadastrais01.jpg" />
+    <Content Include="img\bg_login.jpg" />
+    <Content Include="img\Bg_Meio.jpg" />
+    <Content Include="img\bg_msg_alert.jpg" />
+    <Content Include="img\bg_pessoasligadasPopup.jpg" />
+    <Content Include="img\bg_pessoasligadas_gride.jpg" />
+    <Content Include="img\bg_relatorios.jpg" />
+    <Content Include="img\bg_RestricoesUsuarios.jpg" />
+    <Content Include="img\bg_resultado.jpg" />
+    <Content Include="img\bg_rodape.jpg" />
+    <Content Include="img\bottom-atualize.png" />
+    <Content Include="img\box-usuario-existente.jpg" />
+    <Content Include="img\box2.png" />
+    <Content Include="img\box_bk.png" />
+    <Content Include="img\BtLogo_ClusterBrasil.png" />
+    <Content Include="img\BtLogo_DataCount.png" />
+    <Content Include="img\BtLogo_DataFour.png" />
+    <Content Include="img\BtLogo_IncentivoUnit.png" />
+    <Content Include="img\BtLogo_MetaData.png" />
+    <Content Include="img\Btn-BgAgendar.jpg" />
+    <Content Include="img\Btn-BgMedio.png" />
+    <Content Include="img\btn-continuar.png" />
+    <Content Include="img\BtnAgendarRelatorio.png" />
+    <Content Include="img\bt_atualizar.jpg" />
+    <Content Include="img\bt_atualizar_off.jpg" />
+    <Content Include="img\bt_buscar.jpg" />
+    <Content Include="img\bt_buscar2.jpg" />
+    <Content Include="img\bt_configuracoes.jpg" />
+    <Content Include="img\bt_Creditos.png" />
+    <Content Include="img\Bt_DataFour.png" />
+    <Content Include="img\bt_entrar.jpg" />
+    <Content Include="img\bt_entrar_off.jpg" />
+    <Content Include="img\bt_entrar_on.jpg" />
+    <Content Include="img\bt_exportarRelatorio.jpg" />
+    <Content Include="img\bt_filtro_off.jpg" />
+    <Content Include="img\bt_filtro_on.jpg" />
+    <Content Include="img\Bt_ImgLimpar.png" />
+    <Content Include="img\Bt_ImgSalvar.png" />
+    <Content Include="img\bt_inserir.jpg" />
+    <Content Include="img\bt_inserir_off.jpg" />
+    <Content Include="img\bt_limpar.jpg" />
+    <Content Include="img\bt_limpar2.jpg" />
+    <Content Include="img\bt_limpar_off.jpg" />
+    <Content Include="img\bt_localizar.jpg" />
+    <Content Include="img\bt_novoCliente.jpg" />
+    <Content Include="img\bt_novoUsuario.jpg" />
+    <Content Include="img\Bt_Produtos.png" />
+    <Content Include="img\Bt_Sair.png" />
+    <Content Include="img\bt_sair_off.jpg" />
+    <Content Include="img\bt_sair_on.jpg" />
+    <Content Include="img\bt_Salvar.jpg" />
+    <Content Include="img\bt_sourceCEP.jpg" />
+    <Content Include="img\Cabecalho-IconRobo.jpg" />
+    <Content Include="img\Cabecalho-LogoUnitFour.png" />
+    <Content Include="img\Cabecalho-SetaTexto.jpg" />
+    <Content Include="img\cantoleft_imput.jpg" />
+    <Content Include="img\cantolupa.jpg" />
+    <Content Include="img\cantoright_imput.jpg" />
+    <Content Include="img\close.png" />
+    <Content Include="img\closeOver.png" />
+    <Content Include="img\cornerbottomcenter.png" />
+    <Content Include="img\cornerbottomleft.png" />
+    <Content Include="img\cornerbottomright.png" />
+    <Content Include="img\cornercenter.png" />
+    <Content Include="img\cornerleft.png" />
+    <Content Include="img\cornerright.png" />
+    <Content Include="img\EstrelasBg.png" />
+    <Content Include="img\excAnotacoes.jpg" />
+    <Content Include="img\ic-lupa.jpg" />
+    <Content Include="img\ic-zoom.jpg" />
+    <Content Include="img\icon-general.gif" />
+    <Content Include="img\IconBuscarGeral.png" />
+    <Content Include="img\icone-usuario-existente.png" />
+    <Content Include="img\ic_alert.png" />
+    <Content Include="img\ic_atualize.png" />
+    <Content Include="img\ic_calendario.jpg" />
+    <Content Include="img\ic_cancelar.png" />
+    <Content Include="img\ic_cheked.png" />
+    <Content Include="img\ic_closePopup.jpg" />
+    <Content Include="img\ic_dados.png" />
+    <Content Include="img\ic_DadosComerciais.png" />
+    <Content Include="img\ic_editar.png" />
+    <Content Include="img\ic_editar_white.png" />
+    <Content Include="img\ic_form.png" />
+    <Content Include="img\ic_house.png" />
+    <Content Include="img\ic_info.jpg" />
+    <Content Include="img\ic_inserir.png" />
+    <Content Include="img\ic_inserir_novo.png" />
+    <Content Include="img\ic_key.png" />
+    <Content Include="img\ic_limpar.png" />
+    <Content Include="img\ic_network.png" />
+    <Content Include="img\ic_opcoes_down.jpg" />
+    <Content Include="img\ic_opcoes_up.jpg" />
+    <Content Include="img\ic_pesquisar.png" />
+    <Content Include="img\ic_PessoasLigadas.png" />
+    <Content Include="img\ic_pessoas_restritas.png" />
+    <Content Include="img\ic_seta_accordion.gif" />
+    <Content Include="img\ic_situacaocadastral.jpg" />
+    <Content Include="img\ic_stars_00 - Cópia.png" />
+    <Content Include="img\ic_stars_00.png" />
+    <Content Include="img\ic_stars_01 - Cópia.png" />
+    <Content Include="img\ic_stars_01.png" />
+    <Content Include="img\ic_stars_02 - Cópia.png" />
+    <Content Include="img\ic_stars_02.png" />
+    <Content Include="img\ic_stars_03 - Cópia.png" />
+    <Content Include="img\ic_stars_03.png" />
+    <Content Include="img\ic_stars_04 - Cópia.png" />
+    <Content Include="img\ic_stars_04.png" />
+    <Content Include="img\ic_stars_05 - Cópia.png" />
+    <Content Include="img\ic_stars_05.png" />
+    <Content Include="img\ic_top.jpg" />
+    <Content Include="img\ic_unit.jpg" />
+    <Content Include="img\ic_Vizinhos.png" />
+    <Content Include="img\img-opcional.png" />
+    <Content Include="img\Int22.jpg" />
+    <Content Include="img\lineHorizontal.gif" />
+    <Content Include="img\lineVertical.gif" />
+    <Content Include="img\Login-BgLogo.jpg" />
+    <Content Include="img\Login-LogoClusterBrasil.png" />
+    <Content Include="img\Login-LogoDataCount.png" />
+    <Content Include="img\Login-LogoDataFour.png" />
+    <Content Include="img\Login-LogoIncentivoUnit.png" />
+    <Content Include="img\Login-LogoInTouch.png" />
+    <Content Include="img\Login-LogoMetaData.png" />
+    <Content Include="img\Login-LogoUnitFour.png" />
+    <Content Include="img\logoUnit.jpg" />
+    <Content Include="img\logoUnitfour.jpg" />
+    <Content Include="img\logoUnitfour.png" />
+    <Content Include="img\marcaIntouch.jpg" />
+    <Content Include="img\marcaIntouch.png" />
+    <Content Include="img\marcaIntouch2.png" />
+    <Content Include="img\marca_unitfour.png" />
+    <Content Include="img\maximizar.gif" />
+    <Content Include="img\maximizar.jpg" />
+    <Content Include="img\Meio-LogosProdutos.png" />
+    <Content Include="img\Meio-LogosProdutos_ClusterBrasil.png" />
+    <Content Include="img\Meio-LogosProdutos_DataCount.png" />
+    <Content Include="img\Meio-LogosProdutos_DataFour.png" />
+    <Content Include="img\Meio-LogosProdutos_IncentivoUnit.png" />
+    <Content Include="img\Meio-LogosProdutos_InTouch.png" />
+    <Content Include="img\Meio-LogosProdutos_MetaData.png" />
+    <Content Include="img\minimizar.gif" />
+    <Content Include="img\minimizar.jpg" />
+    <Content Include="img\Modal_BgCabecalho.jpg" />
+    <Content Include="img\opcoesAvancadas-off.jpg" />
+    <Content Include="img\opcoesAvancadas-on.jpg" />
+    <Content Include="img\pdf.png" />
+    <Content Include="img\Perfil-BgSetas.png" />
+    <Content Include="img\print.png" />
+    <Content Include="img\print2.png" />
+    <Content Include="img\relatorio.png" />
+    <Content Include="img\relogio1.png" />
+    <Content Include="img\separador_ic_home.jpg" />
+    <Content Include="img\SetaAtual.png" />
+    <Content Include="img\SetaSubmenu.png" />
+    <Content Include="img\shadowcenter.png" />
+    <Content Include="img\shadowleft.png" />
+    <Content Include="img\shadowright.png" />
+    <Content Include="img\simbolo.jpg" />
+    <Content Include="img\Site-BgGeral.jpg" />
+    <Content Include="img\Site-LogosUnifour.png" />
+    <Content Include="img\Site_LogosUnifour.png" />
+    <Content Include="img\theme-bg.png" />
+    <Content Include="img\topo-box-atualize.png" />
+    <Content Include="img\Topo-BtIcones.png" />
+    <Content Include="imprimir.aspx" />
+    <Content Include="JavaScript\DD_belatedPNG_0.0.8a.js" />
+    <Content Include="JavaScript\function.js" />
+    <Content Include="JavaScript\iehoverfix.js" />
+    <Content Include="JavaScript\jquery.1.3.2.min.js" />
+    <Content Include="JavaScript\Mascara.js" />
+    <Content Include="menu.ascx" />
+    <Content Include="Redirect.aspx" />
+    <Content Include="Relatorios.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="wsIntouch.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acaomenu.aspx.cs">
+      <DependentUpon>acaomenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="acaomenu.aspx.designer.cs">
+      <DependentUpon>acaomenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuscaApresentacao.aspx.cs">
+      <DependentUpon>BuscaApresentacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuscaApresentacao.aspx.designer.cs">
+      <DependentUpon>BuscaApresentacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Erro.aspx.cs">
+      <DependentUpon>Erro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Erro.aspx.designer.cs">
+      <DependentUpon>Erro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estrutura.Master.cs">
+      <DependentUpon>Estrutura.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Estrutura.Master.designer.cs">
+      <DependentUpon>Estrutura.Master</DependentUpon>
+    </Compile>
+    <Compile Include="exportaExcel.aspx.cs">
+      <DependentUpon>exportaExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="exportaExcel.aspx.designer.cs">
+      <DependentUpon>exportaExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="imprimir.aspx.cs">
+      <DependentUpon>imprimir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="imprimir.aspx.designer.cs">
+      <DependentUpon>imprimir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu.ascx.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu.ascx.designer.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="My\MyApplication.cs" />
+    <Compile Include="My\MyComputer.cs" />
+    <Compile Include="My\MyProject.cs" />
+    <Compile Include="My\MySettings.cs" />
+    <Compile Include="My\Resources\Resources.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Redirect.aspx.cs">
+      <DependentUpon>Redirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Redirect.aspx.designer.cs">
+      <DependentUpon>Redirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios.aspx.cs">
+      <DependentUpon>Relatorios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios.aspx.designer.cs">
+      <DependentUpon>Relatorios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SPC\AgenciaContaDocumentoDiferente.cs" />
+    <Compile Include="SPC\Alinea.cs" />
+    <Compile Include="SPC\AssinanteTelefone.cs" />
+    <Compile Include="SPC\Banco.cs" />
+    <Compile Include="SPC\CartaAnuencia.cs" />
+    <Compile Include="SPC\Cartorio.cs" />
+    <Compile Include="SPC\CartorioObito.cs" />
+    <Compile Include="SPC\Cheque.cs" />
+    <Compile Include="SPC\ChequeContraOrdem.cs" />
+    <Compile Include="SPC\ChequeFiltro.cs" />
+    <Compile Include="SPC\ChequeFinal.cs" />
+    <Compile Include="SPC\ChequeLojista.cs" />
+    <Compile Include="SPC\Cidade.cs" />
+    <Compile Include="SPC\Cnpj.cs" />
+    <Compile Include="SPC\consultarCompletedEventArgs.cs" />
+    <Compile Include="SPC\consultarCompletedEventHandler.cs" />
+    <Compile Include="SPC\consultaWebService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPC\Cpf.cs" />
+    <Compile Include="SPC\DadosAgenciaBancaria.cs" />
+    <Compile Include="SPC\DadosBancarios.cs" />
+    <Compile Include="SPC\detalharProdutoCompletedEventArgs.cs" />
+    <Compile Include="SPC\detalharProdutoCompletedEventHandler.cs" />
+    <Compile Include="SPC\Endereco.cs" />
+    <Compile Include="SPC\EnderecoAssinanteTelefone.cs" />
+    <Compile Include="SPC\EnderecoOcorrenciaConsumidor.cs" />
+    <Compile Include="SPC\Estado.cs" />
+    <Compile Include="SPC\EstadoCivil.cs" />
+    <Compile Include="SPC\FiltroConsulta.cs" />
+    <Compile Include="SPC\GrafiaPJ.cs" />
+    <Compile Include="SPC\InsumoAcao.cs" />
+    <Compile Include="SPC\InsumoAlertaDocumento.cs" />
+    <Compile Include="SPC\InsumoAntecessora.cs" />
+    <Compile Include="SPC\InsumoAtividadeEmpresa.cs" />
+    <Compile Include="SPC\InsumoCapitalSocial.cs" />
+    <Compile Include="SPC\InsumoCCF.cs" />
+    <Compile Include="SPC\InsumoChequeConsultaOnlineSRS.cs" />
+    <Compile Include="SPC\InsumoChequeLojista.cs" />
+    <Compile Include="SPC\InsumoChequeOutrasOcorrenciasSRS.cs" />
+    <Compile Include="SPC\InsumoChequeSemFundoAchei.cs" />
+    <Compile Include="SPC\InsumoChequeSemFundoAcheiCCF.cs" />
+    <Compile Include="SPC\InsumoChequeSemFundoVarejo.cs" />
+    <Compile Include="SPC\InsumoConsultaRealizada.cs" />
+    <Compile Include="SPC\InsumoConsultaRealizadaCheque.cs" />
+    <Compile Include="SPC\InsumoContraOrdem.cs" />
+    <Compile Include="SPC\InsumoContraOrdemAgenciaContaDiferente.cs" />
+    <Compile Include="SPC\InsumoContraOrdemAgenciaDiferente.cs" />
+    <Compile Include="SPC\InsumoContraOrdemDocumentoDiferente.cs" />
+    <Compile Include="SPC\InsumoContraOrdemDocumentoDiferenteSRS.cs" />
+    <Compile Include="SPC\InsumoContraOrdemSRS.cs" />
+    <Compile Include="SPC\InsumoContumacia.cs" />
+    <Compile Include="SPC\InsumoContumaciaSRS.cs" />
+    <Compile Include="SPC\InsumoCreditoConcedido.cs" />
+    <Compile Include="SPC\InsumoDadosTelefoneConsultado.cs" />
+    <Compile Include="SPC\InsumoDividaVencida.cs" />
+    <Compile Include="SPC\InsumoEnderecoCEPConsultado.cs" />
+    <Compile Include="SPC\InsumoFilial.cs" />
+    <Compile Include="SPC\InsumoHistoricoCheque.cs" />
+    <Compile Include="SPC\InsumoHistoricoChequeDocumentoDiferente.cs" />
+    <Compile Include="SPC\InsumoHistoricoContaCorrente.cs" />
+    <Compile Include="SPC\InsumoHistoricoPagamento.cs" />
+    <Compile Include="SPC\InsumoIncorporacaoFusaoCisao.cs" />
+    <Compile Include="SPC\InsumoInformacaoPoderJudiciario.cs" />
+    <Compile Include="SPC\InsumoInformacoesAdicionais.cs" />
+    <Compile Include="SPC\InsumoObito.cs" />
+    <Compile Include="SPC\InsumoOcorrenciaConsumidor.cs" />
+    <Compile Include="SPC\InsumoParticipacaoEmpresas.cs" />
+    <Compile Include="SPC\InsumoParticipacaoFalencia.cs" />
+    <Compile Include="SPC\InsumoPendenciaFinanceira.cs" />
+    <Compile Include="SPC\InsumoPrincipaisProdutos.cs" />
+    <Compile Include="SPC\InsumoProduto.cs" />
+    <Compile Include="SPC\InsumoProtesto.cs" />
+    <Compile Include="SPC\InsumoQuadroAdministrativo.cs" />
+    <Compile Include="SPC\InsumoQuadroSocietario.cs" />
+    <Compile Include="SPC\InsumoReferenciaisNegocios.cs" />
+    <Compile Include="SPC\InsumoRegistroConsultas.cs" />
+    <Compile Include="SPC\InsumoRelacionamentoMaisAntigoComFornecedores.cs" />
+    <Compile Include="SPC\InsumoRestricaoFinanceira.cs" />
+    <Compile Include="SPC\InsumoRg.cs" />
+    <Compile Include="SPC\InsumoRiskscoring12Meses.cs" />
+    <Compile Include="SPC\InsumoRiskscoring6Meses.cs" />
+    <Compile Include="SPC\InsumoSPC.cs" />
+    <Compile Include="SPC\InsumoSPCScore12Meses.cs" />
+    <Compile Include="SPC\InsumoSPCScore3Meses.cs" />
+    <Compile Include="SPC\InsumoTelefoneConsultado.cs" />
+    <Compile Include="SPC\InsumoTelefoneVinculadoAssinanteConsultado.cs" />
+    <Compile Include="SPC\InsumoTelefoneVinculadoConsumidor.cs" />
+    <Compile Include="SPC\InsumoUltimasConsultas.cs" />
+    <Compile Include="SPC\listarProdutosCompletedEventArgs.cs" />
+    <Compile Include="SPC\listarProdutosCompletedEventHandler.cs" />
+    <Compile Include="SPC\MensagemComplementar.cs" />
+    <Compile Include="SPC\MensagemRiskscoring.cs" />
+    <Compile Include="SPC\Moeda.cs" />
+    <Compile Include="SPC\NaturezaAnotacao.cs" />
+    <Compile Include="SPC\NaturezaJuridica.cs" />
+    <Compile Include="SPC\OcorrenciaRechequeOnline.cs" />
+    <Compile Include="SPC\Operador.cs" />
+    <Compile Include="SPC\Pais.cs" />
+    <Compile Include="SPC\ParametroProduto.cs" />
+    <Compile Include="SPC\PessoaFisica.cs" />
+    <Compile Include="SPC\PessoaJuridica.cs" />
+    <Compile Include="SPC\Produto.cs" />
+    <Compile Include="SPC\ProtocoloConsulta.cs" />
+    <Compile Include="SPC\RamoAtividade.cs" />
+    <Compile Include="SPC\ReferenciaComercial.cs" />
+    <Compile Include="SPC\ResultadoConsulta.cs" />
+    <Compile Include="SPC\ResultadoConsumidor.cs" />
+    <Compile Include="SPC\ResultadoInsumo.cs" />
+    <Compile Include="SPC\ResultadoInsumoConsultaRealizada.cs" />
+    <Compile Include="SPC\ResultadoInsumoContraOrdem.cs" />
+    <Compile Include="SPC\ResultadoInsumoContumacia.cs" />
+    <Compile Include="SPC\ResumoInsumo.cs" />
+    <Compile Include="SPC\Sexo.cs" />
+    <Compile Include="SPC\Signo.cs" />
+    <Compile Include="SPC\SituacaoDocumentoWS.cs" />
+    <Compile Include="SPC\Subjudice.cs" />
+    <Compile Include="SPC\Telefone.cs" />
+    <Compile Include="SPC\TelefoneFiltro.cs" />
+    <Compile Include="SPC\TipoAcao.cs" />
+    <Compile Include="SPC\TipoAssinanteTelefone.cs" />
+    <Compile Include="SPC\TipoDocumentoAlerta.cs" />
+    <Compile Include="SPC\TipoPessoa.cs" />
+    <Compile Include="SPC\Vara.cs" />
+    <Compile Include="SPC_CNPJ.cs" />
+    <Compile Include="SPC_CNPJ_CNAE_PRINCIPAL.cs" />
+    <Compile Include="SPC_CNPJ_CNAE_PRINCIPAL_Collection.cs" />
+    <Compile Include="SPC_CNPJ_ENDERECO.cs" />
+    <Compile Include="SPC_CPF.cs" />
+    <Compile Include="SPC_CPF_CHEQUE.cs" />
+    <Compile Include="SPC_CPF_CHEQUE_Collection.cs" />
+    <Compile Include="SPC_CPF_ConsultaRealizada.cs" />
+    <Compile Include="SPC_CPF_ConsultaRealizada_Collection.cs" />
+    <Compile Include="wsConsignado\HisconServicesSoap.cs" />
+    <Compile Include="wsConsignado\HisconServicesSoapChannel.cs" />
+    <Compile Include="wsConsignado\HisconServicesSoapClient.cs" />
+    <Compile Include="wsIntouch.asmx.cs">
+      <DependentUpon>wsIntouch.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="css\Ubuntu\Ubuntu-B-webfont.eot" />
+    <None Include="css\Ubuntu\Ubuntu-B-webfont.ttf" />
+    <None Include="css\Ubuntu\Ubuntu-B-webfont.woff" />
+    <None Include="css\Ubuntu\Ubuntu-M-webfont.eot" />
+    <None Include="css\Ubuntu\Ubuntu-M-webfont.ttf" />
+    <None Include="css\Ubuntu\Ubuntu-M-webfont.woff" />
+    <None Include="css\Ubuntu\Ubuntu-R-webfont.eot" />
+    <None Include="css\Ubuntu\Ubuntu-R-webfont.ttf" />
+    <None Include="css\Ubuntu\Ubuntu-R-webfont.woff" />
+    <Content Include="Estrutura.Master" />
+    <None Include="RELATORIO_DETALHADO\ModeloRelatorioDetalhado.xls" />
+    <None Include="RELATORIO_DETALHADO\ModeloRelatorioDetalhadoRevenda.xls" />
+    <None Include="RELATORIO_DETALHADO\RELATORIO_02_07_2012_10_11_37_DETALHADO.xls" />
+    <None Include="RELATORIO_DETALHADO\RELATORIO_03_05_2011_17_21_00_DETALHADO.xls" />
+    <None Include="RELATORIO_DETALHADO\RELATORIO_03_05_2011_17_31_35_DETALHADO.xls" />
+    <None Include="RELATORIO_DETALHADO\RELATORIO_27_06_2012_08_17_28_DETALHADO.xls" />
+    <None Include="RELATORIO_DETALHADO\RELATORIO_RELATORIO_27_06_2012_08_17_28.xls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Imagens\Imagens Sistema\" />
+    <Folder Include="My Project\" />
+    <Folder Include="Service References\" />
+    <Folder Include="Web References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>30962</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
